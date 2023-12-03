@@ -28,7 +28,7 @@
     "react-router-dom": "5.3.4",
     "redux": "^4.2.1",
     "reselect": "^4.1.8",
-    "strapi-plugin-vercel-deploy": "^1.4.0",
+    "strapi-plugin-vercel-deploy": "github:naninyang/strapi-plugin-vercel-deploy#main",
     "styled-components": "5.3.3"
   },
   "author": {
@@ -38,14 +38,10 @@
     "uuid": "d93cbd93-1497-46ff-bad2-694fed72c571"
   },
   "engines": {
-    "node": ">=14.x.x <=18.x.x",
+    "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT",
-  "volta": {
-    "node": "18.19.0",
-    "yarn": "4.0.2"
-  },
   "devDependencies": {
     "@types/node": "^20.10.3"
   }

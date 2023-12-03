@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * content router
+ * komponent router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::content.content');
+module.exports = createCoreRouter('api::komponent.komponent');

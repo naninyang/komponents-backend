@@ -362,6 +362,46 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
+export interface ApiKomponentKomponent extends Schema.CollectionType {
+  collectionName: 'komponents';
+  info: {
+    singularName: 'komponent';
+    pluralName: 'komponents';
+    displayName: 'Komponent';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    subject: Attribute.String & Attribute.Required;
+    Summary: Attribute.Text & Attribute.Required;
+    Created: Attribute.DateTime & Attribute.Required & Attribute.Unique;
+    componentCode: Attribute.Blocks & Attribute.Required;
+    useCode: Attribute.Blocks & Attribute.Required;
+    Language: Attribute.Enumeration<
+      ['React', 'NEXT.JS', 'SVELTE', 'SVELTE KIT', 'Vue.js', 'Nuxt']
+    > &
+      Attribute.Required;
+    useTypeScript: Attribute.Boolean & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::komponent.komponent',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::komponent.komponent',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -677,43 +717,6 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
-export interface ApiContentContent extends Schema.CollectionType {
-  collectionName: 'contents';
-  info: {
-    singularName: 'content';
-    pluralName: 'contents';
-    displayName: 'Komponents';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    subject: Attribute.String & Attribute.Required;
-    created: Attribute.DateTime & Attribute.Required & Attribute.Unique;
-    componentsCode: Attribute.Blocks & Attribute.Required;
-    useCode: Attribute.Blocks & Attribute.Required;
-    languages: Attribute.Enumeration<['react', 'next', 'svelte', 'vue']> &
-      Attribute.Required;
-    useTypeScript: Attribute.Boolean & Attribute.Required;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::content.content',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::content.content',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -724,13 +727,13 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
+      'api::komponent.komponent': ApiKomponentKomponent;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::i18n.locale': PluginI18NLocale;
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
-      'api::content.content': ApiContentContent;
     }
   }
 }

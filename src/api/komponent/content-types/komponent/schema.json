@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "contents",
+  "collectionName": "komponents",
   "info": {
-    "singularName": "content",
-    "pluralName": "contents",
-    "displayName": "Komponents",
+    "singularName": "komponent",
+    "pluralName": "komponents",
+    "displayName": "Komponent",
     "description": ""
   },
   "options": {
@@ -16,12 +16,16 @@
       "type": "string",
       "required": true
     },
-    "created": {
+    "Summary": {
+      "type": "text",
+      "required": true
+    },
+    "Created": {
       "type": "datetime",
       "required": true,
       "unique": true
     },
-    "componentsCode": {
+    "componentCode": {
       "type": "blocks",
       "required": true
     },
@@ -29,13 +33,15 @@
       "type": "blocks",
       "required": true
     },
-    "languages": {
+    "Language": {
       "type": "enumeration",
       "enum": [
-        "react",
-        "next",
-        "svelte",
-        "vue"
+        "React",
+        "NEXT.JS",
+        "SVELTE",
+        "SVELTE KIT",
+        "Vue.js",
+        "Nuxt"
       ],
       "required": true
     },
