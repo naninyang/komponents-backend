@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contents",
+  "info": {
+    "singularName": "content",
+    "pluralName": "contents",
+    "displayName": "Komponents",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subject": {
+      "type": "string",
+      "required": true
+    },
+    "created": {
+      "type": "datetime",
+      "required": true,
+      "unique": true
+    },
+    "componentsCode": {
+      "type": "blocks",
+      "required": true
+    },
+    "useCode": {
+      "type": "blocks",
+      "required": true
+    },
+    "languages": {
+      "type": "enumeration",
+      "enum": [
+        "react",
+        "next",
+        "svelte",
+        "vue"
+      ],
+      "required": true
+    },
+    "useTypeScript": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}
