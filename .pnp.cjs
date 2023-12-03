@@ -30,6 +30,7 @@ const RAW_RUNTIME_STATE =
           ["@strapi/plugin-i18n", "virtual:6d569375d084eb18e49914facd0f0ea9f7b9bc93a561bdbe672f763580262f7cdea6ad0bb95aebd4ade176b571e02c25c12dbecd0890fcbfb5931e78056f07e6#npm:4.15.5"],\
           ["@strapi/plugin-users-permissions", "virtual:6d569375d084eb18e49914facd0f0ea9f7b9bc93a561bdbe672f763580262f7cdea6ad0bb95aebd4ade176b571e02c25c12dbecd0890fcbfb5931e78056f07e6#npm:4.15.5"],\
           ["@strapi/strapi", "npm:4.15.5"],\
+          ["@types/node", "npm:20.10.3"],\
           ["better-sqlite3", "npm:8.6.0"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:0bb8dd57a04588d5be21df218092e6b7cc6a84831022dc9da82563c92e8a21f14b70c1138a3ed744b067ebcaa2d91b7fffe3b039011c5b8d54b86e9e10f113ae#npm:18.2.0"],\
@@ -4895,6 +4896,14 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../.yarn/berry/cache/@types-node-npm-20.10.2-362c02a091-10c0.zip/node_modules/@types/node/",\
         "packageDependencies": [\
           ["@types/node", "npm:20.10.2"],\
+          ["undici-types", "npm:5.26.5"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:20.10.3", {\
+        "packageLocation": "../../.yarn/berry/cache/@types-node-npm-20.10.3-d385a9ec0a-10c0.zip/node_modules/@types/node/",\
+        "packageDependencies": [\
+          ["@types/node", "npm:20.10.3"],\
           ["undici-types", "npm:5.26.5"]\
         ],\
         "linkType": "HARD"\
@@ -10895,6 +10904,7 @@ const RAW_RUNTIME_STATE =
           ["@strapi/plugin-i18n", "virtual:6d569375d084eb18e49914facd0f0ea9f7b9bc93a561bdbe672f763580262f7cdea6ad0bb95aebd4ade176b571e02c25c12dbecd0890fcbfb5931e78056f07e6#npm:4.15.5"],\
           ["@strapi/plugin-users-permissions", "virtual:6d569375d084eb18e49914facd0f0ea9f7b9bc93a561bdbe672f763580262f7cdea6ad0bb95aebd4ade176b571e02c25c12dbecd0890fcbfb5931e78056f07e6#npm:4.15.5"],\
           ["@strapi/strapi", "npm:4.15.5"],\
+          ["@types/node", "npm:20.10.3"],\
           ["better-sqlite3", "npm:8.6.0"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:0bb8dd57a04588d5be21df218092e6b7cc6a84831022dc9da82563c92e8a21f14b70c1138a3ed744b067ebcaa2d91b7fffe3b039011c5b8d54b86e9e10f113ae#npm:18.2.0"],\

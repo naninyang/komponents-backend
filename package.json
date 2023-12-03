@@ -35,5 +35,8 @@
   "volta": {
     "node": "18.19.0",
     "yarn": "4.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.3"
   }
 }
