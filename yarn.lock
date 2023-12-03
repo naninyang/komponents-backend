@@ -392,7 +392,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@codemirror/state@npm:^6.0.0, @codemirror/state@npm:^6.1.1, @codemirror/state@npm:^6.1.4, @codemirror/state@npm:^6.2.0":
+"@codemirror/state@npm:^6.0.0, @codemirror/state@npm:^6.1.1, @codemirror/state@npm:^6.1.4, @codemirror/state@npm:^6.2.0, @codemirror/state@npm:^6.3.2":
   version: 6.3.2
   resolution: "@codemirror/state@npm:6.3.2"
   checksum: d0fa8c78bbccacc6bff5ac661a8e825c21c12fd45294d9a2e181d50af8294165b749094a3fbfc173a0aac72eabc3bf28aa48dfebc330239663680b2ded701ff5
@@ -411,7 +411,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@codemirror/view@npm:^6.0.0, @codemirror/view@npm:^6.17.0":
+"@codemirror/view@npm:^6.0.0, @codemirror/view@npm:^6.17.0, @codemirror/view@npm:^6.22.1":
   version: 6.22.1
   resolution: "@codemirror/view@npm:6.22.1"
   dependencies:
@@ -1082,7 +1082,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@floating-ui/react-dom@npm:^2.0.0, @floating-ui/react-dom@npm:^2.0.2":
+"@floating-ui/react-dom@npm:^2.0.0, @floating-ui/react-dom@npm:^2.0.2, @floating-ui/react-dom@npm:^2.0.4":
   version: 2.0.4
   resolution: "@floating-ui/react-dom@npm:2.0.4"
   dependencies:
@@ -1292,7 +1292,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@internationalized/number@npm:^3.3.0":
+"@internationalized/number@npm:^3.3.0, @internationalized/number@npm:^3.4.0":
   version: 3.4.0
   resolution: "@internationalized/number@npm:3.4.0"
   dependencies:
@@ -1730,7 +1730,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/react-focus-guards@npm:1.0.1":
+"@radix-ui/react-focus-guards@npm:1.0.1, @radix-ui/react-focus-guards@npm:^1.0.1":
   version: 1.0.1
   resolution: "@radix-ui/react-focus-guards@npm:1.0.1"
   dependencies:
@@ -2527,6 +2527,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@strapi/design-system@npm:^1.13.2":
+  version: 1.13.2
+  resolution: "@strapi/design-system@npm:1.13.2"
+  dependencies:
+    "@codemirror/lang-json": "npm:^6.0.1"
+    "@floating-ui/react-dom": "npm:^2.0.4"
+    "@internationalized/date": "npm:^3.5.0"
+    "@internationalized/number": "npm:^3.4.0"
+    "@radix-ui/react-dismissable-layer": "npm:^1.0.5"
+    "@radix-ui/react-dropdown-menu": "npm:^2.0.6"
+    "@radix-ui/react-focus-scope": "npm:1.0.4"
+    "@strapi/ui-primitives": "npm:^1.13.2"
+    "@uiw/react-codemirror": "npm:^4.21.21"
+    aria-hidden: "npm:^1.2.3"
+    compute-scroll-into-view: "npm:^3.1.0"
+    prop-types: "npm:^15.8.1"
+    react-remove-scroll: "npm:^2.5.7"
+  peerDependencies:
+    "@strapi/icons": ^1.5.0
+    react: ^17.0.0 || ^18.0.0
+    react-dom: ^17.0.0 || ^18.0.0
+    react-router-dom: ^5.2.0
+    styled-components: ^5.2.1
+  checksum: 2d46385bee19daea7bb8de4c4627a25659e98aa860131961ef520c288b26fe2e89b5f14dcea27103e6bd748169a45a488406c7a9b55104f067c498a3105b7eb9
+  languageName: node
+  linkType: hard
+
 "@strapi/generate-new@npm:4.15.5":
   version: 4.15.5
   resolution: "@strapi/generate-new@npm:4.15.5"
@@ -2595,6 +2622,16 @@ __metadata:
     react: ^17.0.0 || ^18.0.0
     react-dom: ^17.0.0 || ^18.0.0
   checksum: 9dd24f70cf40d972733c013f167b5ce30602afa9918c8f9dba5b89844f6137bd9a283c6ff38ce369385afa8cc7a25f33e47aed631769c006076e230e08c8d4ef
+  languageName: node
+  linkType: hard
+
+"@strapi/icons@npm:^1.13.2":
+  version: 1.13.2
+  resolution: "@strapi/icons@npm:1.13.2"
+  peerDependencies:
+    react: ^17.0.0 || ^18.0.0
+    react-dom: ^17.0.0 || ^18.0.0
+  checksum: 5ff80681439b8a56d606ac32365fd2cac6b7ec6f76a29f6b5e0fe3698edefb5bd327c5da08da18907749f5bd08bef92465d6c4aaf8554e60e2de32297c42df81
   languageName: node
   linkType: hard
 
@@ -2966,7 +3003,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@strapi/ui-primitives@npm:^1.13.0":
+"@strapi/ui-primitives@npm:^1.13.0, @strapi/ui-primitives@npm:^1.13.2":
   version: 1.13.2
   resolution: "@strapi/ui-primitives@npm:1.13.2"
   dependencies:
@@ -3391,7 +3428,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@uiw/react-codemirror@npm:^4.21.20":
+"@uiw/react-codemirror@npm:^4.21.20, @uiw/react-codemirror@npm:^4.21.21":
   version: 4.21.21
   resolution: "@uiw/react-codemirror@npm:4.21.21"
   dependencies:
@@ -8490,15 +8527,25 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "komponents@workspace:."
   dependencies:
+    "@codemirror/state": "npm:^6.3.2"
+    "@codemirror/view": "npm:^6.22.1"
+    "@radix-ui/react-focus-guards": "npm:^1.0.1"
+    "@strapi/design-system": "npm:^1.13.2"
+    "@strapi/icons": "npm:^1.13.2"
     "@strapi/plugin-cloud": "npm:4.15.5"
     "@strapi/plugin-i18n": "npm:4.15.5"
     "@strapi/plugin-users-permissions": "npm:4.15.5"
     "@strapi/strapi": "npm:4.15.5"
     "@types/node": "npm:^20.10.3"
+    "@uiw/react-codemirror": "npm:^4.21.21"
     better-sqlite3: "npm:8.6.0"
+    prop-types: "npm:^15.8.1"
+    punycode: "npm:^2.3.1"
     react: "npm:^18.0.0"
     react-dom: "npm:^18.0.0"
     react-router-dom: "npm:5.3.4"
+    redux: "npm:^4.2.1"
+    reselect: "npm:^4.1.8"
     strapi-plugin-vercel-deploy: "npm:^1.4.0"
     styled-components: "npm:5.3.3"
   languageName: unknown
@@ -10468,7 +10515,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"punycode@npm:^2.1.0":
+"punycode@npm:^2.1.0, punycode@npm:^2.3.1":
   version: 2.3.1
   resolution: "punycode@npm:2.3.1"
   checksum: 14f76a8206bc3464f794fb2e3d3cc665ae416c01893ad7a02b23766eb07159144ee612ad67af5e84fa4479ccfe67678c4feb126b0485651b302babf66f04f9e9
