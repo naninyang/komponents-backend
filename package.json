@@ -10,39 +10,52 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@babel/runtime": "^7.23.5",
     "@codemirror/state": "^6.3.2",
     "@codemirror/view": "^6.22.1",
+    "@fingerprintjs/fingerprintjs": "^4.2.1",
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@radix-ui/react-focus-guards": "^1.0.1",
     "@strapi/design-system": "^1.13.2",
     "@strapi/icons": "^1.13.2",
-    "@strapi/plugin-cloud": "4.15.5",
-    "@strapi/plugin-i18n": "4.15.5",
-    "@strapi/plugin-users-permissions": "4.15.5",
-    "@strapi/strapi": "4.15.5",
-    "@uiw/react-codemirror": "^4.21.21",
-    "better-sqlite3": "8.6.0",
+    "@strapi/plugin-cloud": "^4.15.5",
+    "@strapi/plugin-i18n": "4.5.3",
+    "@strapi/plugin-users-permissions": "4.5.3",
+    "@strapi/strapi": "4.5.3",
+    "axios": "^1.6.2",
+    "better-sqlite3": "7.4.6",
+    "codemirror": "^6.0.1",
+    "cropperjs": "^1.6.1",
+    "css-loader": "^6.8.1",
+    "date-fns": "^2.30.0",
+    "font-awesome": "^4.7.0",
+    "fortawesome": "^0.0.1-security",
+    "invariant": "^2.2.4",
+    "js-cookie": "^3.0.5",
+    "lodash": "^4.17.21",
+    "match-sorter": "^6.3.1",
+    "pluralize": "^8.0.0",
     "prop-types": "^15.8.1",
     "punycode": "^2.3.1",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-router-dom": "5.3.4",
+    "react": "^18.2.0",
+    "react-select": "^5.8.0",
     "redux": "^4.2.1",
     "reselect": "^4.1.8",
-    "strapi-plugin-vercel-deploy": "github:naninyang/strapi-plugin-vercel-deploy#main",
-    "styled-components": "5.3.3"
+    "semver": "^7.5.4",
+    "strapi-plugin-vercel-deploy": "^1.4.0",
+    "style-loader": "^3.3.3",
+    "whatwg-fetch": "^3.6.19"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "d93cbd93-1497-46ff-bad2-694fed72c571"
+    "uuid": "94d4a2c8-a33e-4349-91aa-c13eb00b8fe3"
   },
   "engines": {
-    "node": ">=18.0.0 <=20.x.x",
+    "node": ">=14.19.1 <=18.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^20.10.3"
-  }
+  "license": "MIT"
 }
