@@ -24,15 +24,6 @@ jobs:
     - name: Install pm2
       run: npm install -g pm2
 
-    - name: Install FNM
-      run: curl -fsSL https://fnm.vercel.app/install | bash -s -- --install-dir "./.fnm" --skip-shell
-
-    - name: FNM using install NPM LTS
-      run: fnm install 20
-
-    - name: Set up FNM
-      run: fnm default 20
-
     - name: Install Dependencies
       run: pnpm install
 
