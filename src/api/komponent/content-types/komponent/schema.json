@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "komponents",
+  "info": {
+    "singularName": "komponent",
+    "pluralName": "komponents",
+    "displayName": "Komponent"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subject": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "componentCode": {
+      "type": "blocks",
+      "required": true
+    },
+    "useCode": {
+      "type": "blocks",
+      "required": true
+    },
+    "language": {
+      "type": "enumeration",
+      "enum": [
+        "vanillaJS",
+        "react",
+        "nextJS",
+        "svelte",
+        "svelteKit",
+        "vue",
+        "nuxt",
+        "angularJS",
+        "angularUniversal",
+        "ember"
+      ],
+      "required": true
+    },
+    "useTypeScript": {
+      "type": "boolean",
+      "required": true
+    },
+    "created": {
+      "type": "datetime",
+      "required": true
+    }
+  }
+}
