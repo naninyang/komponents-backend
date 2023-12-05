@@ -35,5 +35,6 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }} # ec2 instance pem key
         port: ${{ secrets.REMOTE_SSH_PORT }} # 접속포트
         script: | # 실행할 스크립트
-          chmod +x ~/services/komponents-backend/deploy.sh
-          ~/services/komponents-backend/deploy.sh
+          cd ~/services/komponents-backend
+          pnpm i
+          pm2 restart ecosystem.config.js
