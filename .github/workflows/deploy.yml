@@ -37,4 +37,4 @@ jobs:
         TARGET: ${{ secrets.REMOTE_TARGET }} # 파일을 복사할 EC2 인스턴스의 경로
 
     - name: Execute Deployment Script
-      run: ~/services/komponents-backend/deploy.sh
+      run: deploy.sh
