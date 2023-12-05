@@ -36,7 +36,5 @@ jobs:
         REMOTE_USER: ${{ secrets.REMOTE_USER }} # EC2 인스턴스의 사용자 이름
         TARGET: ${{ secrets.REMOTE_TARGET }} # 파일을 복사할 EC2 인스턴스의 경로
 
-    - name: Set Execution Permissions
-      run: ssh -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} "chmod +x ~/services/komponents-backend/deploy.sh"
     - name: Execute Deployment Script
-      run: ssh -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} "~/services/komponents-backend/deploy.sh"
+      run: ~/services/komponents-backend/deploy.sh
