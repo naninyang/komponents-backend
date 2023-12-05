@@ -32,7 +32,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }} # ec2 instance pem key
         port: ${{ secrets.REMOTE_SSH_PORT }} # 접속포트
         script: | # 실행할 스크립트
-          curl -fsSL https://fnm.vercel.app/install | bash
+          curl -fsSL https://fnm.vercel.app/install | bash -s -- --install-dir "./.fnm" --skip-shell
           fnm install 20
           fnm use 20
           npm install -g pnpm
