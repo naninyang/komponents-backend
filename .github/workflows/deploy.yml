@@ -38,6 +38,3 @@ jobs:
         REMOTE_HOST: ${{ secrets.REMOTE_HOST }} # EC2 인스턴스의 IP 주소 또는 도메인
         REMOTE_USER: ${{ secrets.REMOTE_USER }} # EC2 인스턴스의 사용자 이름
         TARGET: ${{ secrets.REMOTE_TARGET }} # 파일을 복사할 EC2 인스턴스의 경로
-
-    - name: Execute Deployment Script
-      run: deploy.sh
