@@ -18,8 +18,11 @@ jobs:
       with:
         node-version: '20.10.0' # Strapi에 적합한 Node.js 버전을 선택하세요.
 
+    - name: Install pnpm
+      run: npm install -g pnpm
+
     - name: Install Dependencies
-      run: pnpm i
+      run: pnpm install
 
     - name: Copy files to EC2
       uses: easingthemes/ssh-deploy@v2.1.5
