@@ -27,12 +27,6 @@ jobs:
     - name: Install Dependencies
       run: pnpm install
 
-    - name: Production Build
-      run: NODE_ENV=production pnpm build
-
-    - name: PM2 Restart
-      run: pm2 restart ecosystem.config.js
-
     - name: Copy files to EC2
       uses: easingthemes/ssh-deploy@v4.1.10
       env:
@@ -41,3 +35,9 @@ jobs:
         REMOTE_HOST: ${{ secrets.REMOTE_HOST }} # EC2 인스턴스의 IP 주소 또는 도메인
         REMOTE_USER: ${{ secrets.REMOTE_USER }} # EC2 인스턴스의 사용자 이름
         TARGET: ${{ secrets.REMOTE_TARGET }} # 파일을 복사할 EC2 인스턴스의 경로
+
+    - name: Production Build
+      run: NODE_ENV=production pnpm build
+
+    - name: PM2 Restart
+      run: pm2 restart ecosystem.config.js
