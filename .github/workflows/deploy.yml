@@ -19,7 +19,7 @@ jobs:
         node-version: '20.10.0' # Strapi에 적합한 Node.js 버전을 선택하세요.
 
     - name: Install Dependencies
-      run: npm install
+      run: pnpm i
 
     - name: Copy files to EC2
       uses: easingthemes/ssh-deploy@v2.1.5
@@ -31,7 +31,7 @@ jobs:
         TARGET: ${{ secrets.REMOTE_TARGET }} # 파일을 복사할 EC2 인스턴스의 경로
         
     - name: Set Execution Permissions
-      run: ssh -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} "chmod +x ~/strapi-deploy.sh"
+      run: ssh -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} "chmod +x ~/services/komponents-backend/deploy.sh"
 
     - name: Execute Deployment Script
-      run: ssh -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} "~/strapi-deploy.sh"
+      run: ssh -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} "~/services/komponents-backend/deploy.sh"
