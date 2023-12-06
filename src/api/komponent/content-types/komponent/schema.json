@@ -4,7 +4,8 @@
   "info": {
     "singularName": "komponent",
     "pluralName": "komponents",
-    "displayName": "Komponent"
+    "displayName": "Komponent",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -47,9 +48,14 @@
       "type": "boolean",
       "required": true
     },
-    "created": {
-      "type": "datetime",
-      "required": true
+    "subjectEng": {
+      "type": "string"
+    },
+    "componentCodeEng": {
+      "type": "blocks"
+    },
+    "useCodeEng": {
+      "type": "blocks"
     }
   }
 }
