@@ -399,9 +399,7 @@ export interface ApiKomponentKomponent extends Schema.CollectionType {
     useCodeEng: Attribute.Blocks;
     componentCodeLanguage: Attribute.Enumeration<
       [
-        'html',
-        'xml',
-        'svg',
+        'markup',
         'css',
         'js',
         'sh',
@@ -419,9 +417,7 @@ export interface ApiKomponentKomponent extends Schema.CollectionType {
       Attribute.Required;
     useCodeLanguage: Attribute.Enumeration<
       [
-        'html',
-        'xml',
-        'svg',
+        'markup',
         'css',
         'js',
         'sh',

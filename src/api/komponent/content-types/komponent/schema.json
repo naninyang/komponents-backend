@@ -60,9 +60,7 @@
     "componentCodeLanguage": {
       "type": "enumeration",
       "enum": [
-        "html",
-        "xml",
-        "svg",
+        "markup",
         "css",
         "js",
         "sh",
@@ -81,9 +79,7 @@
     "useCodeLanguage": {
       "type": "enumeration",
       "enum": [
-        "html",
-        "xml",
-        "svg",
+        "markup",
         "css",
         "js",
         "sh",
