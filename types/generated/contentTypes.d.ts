@@ -380,16 +380,17 @@ export interface ApiKomponentKomponent extends Schema.CollectionType {
     useCode: Attribute.Blocks & Attribute.Required;
     language: Attribute.Enumeration<
       [
-        'vanillaJS',
-        'react',
-        'nextJS',
-        'svelte',
-        'svelteKit',
-        'vue',
-        'nuxt',
-        'angularJS',
-        'angularUniversal',
-        'ember'
+        'Angular',
+        'EmberJS',
+        'GoLang',
+        'NextJS',
+        'NodeJS',
+        'Nuxt',
+        'ReactJS',
+        'Svelte',
+        'TypeScript',
+        'VanillaJS',
+        'Vue'
       ]
     > &
       Attribute.Required;

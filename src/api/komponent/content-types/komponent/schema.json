@@ -31,16 +31,17 @@
     "language": {
       "type": "enumeration",
       "enum": [
-        "vanillaJS",
-        "react",
-        "nextJS",
-        "svelte",
-        "svelteKit",
-        "vue",
-        "nuxt",
-        "angularJS",
-        "angularUniversal",
-        "ember"
+        "Angular",
+        "EmberJS",
+        "GoLang",
+        "NextJS",
+        "NodeJS",
+        "Nuxt",
+        "ReactJS",
+        "Svelte",
+        "TypeScript",
+        "VanillaJS",
+        "Vue"
       ],
       "required": true
     },
