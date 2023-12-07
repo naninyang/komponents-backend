@@ -397,6 +397,46 @@ export interface ApiKomponentKomponent extends Schema.CollectionType {
     subjectEng: Attribute.String;
     componentCodeEng: Attribute.Blocks;
     useCodeEng: Attribute.Blocks;
+    componentCodeLanguage: Attribute.Enumeration<
+      [
+        'html',
+        'xml',
+        'svg',
+        'css',
+        'js',
+        'sh',
+        'go',
+        'json',
+        'py',
+        'jsx',
+        'tsx',
+        'sass',
+        'scss',
+        'ts',
+        'yaml'
+      ]
+    > &
+      Attribute.Required;
+    useCodeLanguage: Attribute.Enumeration<
+      [
+        'html',
+        'xml',
+        'svg',
+        'css',
+        'js',
+        'sh',
+        'go',
+        'json',
+        'py',
+        'jsx',
+        'tsx',
+        'sass',
+        'scss',
+        'ts',
+        'yaml'
+      ]
+    > &
+      Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

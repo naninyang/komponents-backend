@@ -56,6 +56,48 @@
     },
     "useCodeEng": {
       "type": "blocks"
+    },
+    "componentCodeLanguage": {
+      "type": "enumeration",
+      "enum": [
+        "html",
+        "xml",
+        "svg",
+        "css",
+        "js",
+        "sh",
+        "go",
+        "json",
+        "py",
+        "jsx",
+        "tsx",
+        "sass",
+        "scss",
+        "ts",
+        "yaml"
+      ],
+      "required": true
+    },
+    "useCodeLanguage": {
+      "type": "enumeration",
+      "enum": [
+        "html",
+        "xml",
+        "svg",
+        "css",
+        "js",
+        "sh",
+        "go",
+        "json",
+        "py",
+        "jsx",
+        "tsx",
+        "sass",
+        "scss",
+        "ts",
+        "yaml"
+      ],
+      "required": true
     }
   }
 }
