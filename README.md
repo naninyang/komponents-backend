@@ -1,57 +1,45 @@
-# 🚀 Getting started with Strapi
+# 콤포넌트 komponent
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+K-components
 
-### `develop`
+## 사용된 주요기술
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
+### Backend
 
-```
-npm run develop
-# or
-yarn develop
-```
+- Strapi 4
+- MariaDB
+- AWS EC2
+- AWS S3 (세팅만 하고 사용 안함)
+- PM2
+- NginX
+- Github Actions (Workflows)
 
-### `start`
+### Frontend
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
+- Next.js w/ React
+- TypeScript
+- Emotion
+- SASS
+- date-fns
+- react-responsive
+- Prism.js
 
-```
-npm run start
-# or
-yarn start
-```
+## Troubleshooting
 
-### `build`
+아직 개발이 완료되지 않았습니다.
 
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
+### TODO
 
-```
-npm run build
-# or
-yarn build
-```
+- user 연동 (회원가입, 가입한 회원의 정보를 komponent 콜렉션에 디스플레이 되게 처리, 프로필 보기)
+- 이메일 보내기 기능 (회원가입용)
+- workflow에서 모든 deploy 과정 처리
 
-## ⚙️ Deployment
+## 주의사항 및 저작권
 
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
+오픈소스, 오픈 API를 제외한 나머지는 모두 클로이에게 저작권이 있습니다.
 
-## 📚 Learn more
+### 스텝
 
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+- 기획: 클로이 Chloe
+- UX 디자인: 클로이 Chloe
+- 프론트엔드/백엔드 개발: 클로이 Chloe
