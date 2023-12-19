@@ -386,6 +386,7 @@ export interface ApiKomponentKomponent extends Schema.CollectionType {
         'NextJS',
         'NodeJS',
         'Nuxt',
+        'Python',
         'ReactJS',
         'Svelte',
         'TypeScript',
@@ -400,37 +401,37 @@ export interface ApiKomponentKomponent extends Schema.CollectionType {
     useCodeEng: Attribute.Blocks;
     componentCodeLanguage: Attribute.Enumeration<
       [
-        'markup',
         'css',
-        'js',
-        'sh',
+        'cvs',
         'go',
+        'javascript',
         'json',
-        'py',
         'jsx',
-        'tsx',
+        'markup',
+        'python',
         'sass',
         'scss',
-        'ts',
-        'yaml'
+        'shell',
+        'tsx',
+        'typescript'
       ]
     > &
       Attribute.Required;
     useCodeLanguage: Attribute.Enumeration<
       [
-        'markup',
         'css',
-        'js',
-        'sh',
+        'csv',
         'go',
+        'javascript',
         'json',
-        'py',
         'jsx',
-        'tsx',
+        'markup',
+        'python',
         'sass',
         'scss',
-        'ts',
-        'yaml'
+        'shell',
+        'tsx',
+        'typescript'
       ]
     > &
       Attribute.Required;

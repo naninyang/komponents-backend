@@ -37,6 +37,7 @@
         "NextJS",
         "NodeJS",
         "Nuxt",
+        "Python",
         "ReactJS",
         "Svelte",
         "TypeScript",
@@ -61,38 +62,38 @@
     "componentCodeLanguage": {
       "type": "enumeration",
       "enum": [
-        "markup",
         "css",
-        "js",
-        "sh",
+        "cvs",
         "go",
+        "javascript",
         "json",
-        "py",
         "jsx",
-        "tsx",
+        "markup",
+        "python",
         "sass",
         "scss",
-        "ts",
-        "yaml"
+        "shell",
+        "tsx",
+        "typescript"
       ],
       "required": true
     },
     "useCodeLanguage": {
       "type": "enumeration",
       "enum": [
-        "markup",
         "css",
-        "js",
-        "sh",
+        "csv",
         "go",
+        "javascript",
         "json",
-        "py",
         "jsx",
-        "tsx",
+        "markup",
+        "python",
         "sass",
         "scss",
-        "ts",
-        "yaml"
+        "shell",
+        "tsx",
+        "typescript"
       ],
       "required": true
     }
